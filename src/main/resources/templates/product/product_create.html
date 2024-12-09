@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" layout:decorate="~{main_layout}">
+
+<head>
+	<title th:text="#{menu.product.list}"></title>
+	<!-- Plugins css -->
+    <link th:href="@{/assets/libs/quill/quill.core.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/assets/libs/quill/quill.bubble.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/assets/libs/quill/quill.snow.css}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="content-page" layout:fragment="content">
+
+		<div class="content">
+
+			<!-- Start Content-->
+			<div class="container-fluid">
+
+				<!-- start page title -->
+				<div class="row">
+					<div class="col-12">
+						<div class="page-title-box">
+							<h4 class="page-title font" th:text="#{menu.product.list}"></h4>
+							<div class="page-title-right">
+								<ol class="breadcrumb p-0 m-0">
+									<li class="breadcrumb-item font"><a href="#" th:text="#{system.name}"></a></li>
+									<li class="breadcrumb-item active font" th:text="#{menu.product.list}"></li>
+								</ol>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end page title -->
+
+
+				<div class="row">
+				    <!-- Basic example -->
+				    <div class="col-xl-12">
+				        <div class="card">
+				            <div class="card-header">
+				                <h3 class="card-title">បន្ថែម សម្ភារ.</h3></div>
+				            <div class="card-body">
+				                <form>
+
+									<div class="row">
+									    <div class="col-lg-4">
+									        <div class="form-group">
+									            <label for="field-1" class="control-label">ឈ្មោះ</label>
+									            <input type="text" class="form-control" id="field-1" placeholder="John">
+									        </div>
+									    </div>
+									    <div class="col-lg-4">
+									        <div class="form-group">
+									            <label for="field-2" class="control-label">បរិមាណ</label>
+									            <input type="text" class="form-control" id="field-2" placeholder="Doe">
+									        </div>
+									    </div>
+										<div class="col-lg-4">
+									       <div class="form-group">
+									           <label for="field-3" class="control-label">រូបិយប័ណ្ណ</label>
+									           <input type="text" class="form-control" id="field-3" placeholder="Address">
+									       </div>
+									   </div>
+									</div>
+									<div class="row">
+									   <div class="col-lg-4">
+									       <div class="form-group">
+									           <label for="field-1" class="control-label">អត្រាប្ដូរប្រាក់</label>
+									           <input type="text" class="form-control" id="field-1" placeholder="John">
+									       </div>
+									   </div>
+									   <div class="col-lg-4">
+									       <div class="form-group">
+									           <label for="field-2" class="control-label">តម្លៃ</label>
+									           <input type="text" class="form-control" id="field-2" placeholder="Doe">
+									       </div>
+									    </div>
+									   	<div class="col-lg-4">
+									          <div class="form-group">
+									              <label for="field-3" class="control-label">ប្រភេទ</label>
+									              <input type="text" class="form-control" id="field-3" placeholder="Address">
+									          </div>
+									      </div>
+									   </div>
+									  <div class="row">
+									      <div class="col-lg-4">
+									          <div class="form-group">
+									              <label for="field-1" class="control-label">ស្ថានភាព</label>
+									              <input type="text" class="form-control" id="field-1" placeholder="John">
+									          </div>
+									      </div>
+									      <div class="col-lg-4">
+									          <div class="form-group">
+									              <label for="field-2" class="control-label">ក្រុមហ៊ុនផលិត</label>
+									              <input type="text" class="form-control" id="field-2" placeholder="Doe">
+									          </div>
+									      </div>
+									  	<div class="col-lg-4">
+									         <div class="form-group">
+									             <label for="field-3" class="control-label">ប្រទេសផលិត</label>
+									             <input type="text" class="form-control" id="field-3" placeholder="Address">
+									         </div>
+									     </div>
+									  </div>
+									 <div class="row">
+									     <div class="col-lg-4">
+									         <div class="form-group">
+									             <label for="field-1" class="control-label">កាលបរិច្ឆេទទទួល</label>
+									             <input type="text" class="form-control" id="field-1" placeholder="John">
+									         </div>
+									     </div>
+									     <div class="col-lg-4">
+									         <div class="form-group">
+									             <label for="field-2" class="control-label">ប្រភព</label>
+									             <input type="text" class="form-control" id="field-2" placeholder="Doe">
+									         </div>
+									     </div>
+									 	<div class="col-lg-4">
+									        <div class="form-group">
+									            <label for="field-3" class="control-label">អ្នកផ្គត់ផ្គង់</label>
+									            <input type="text" class="form-control" id="field-3" placeholder="Address">
+									        </div>
+									    </div>
+									 </div>
+									<div class="row">
+									    <div class="col-lg-4">
+									        <div class="form-group">
+									            <label for="field-1" class="control-label">Fund</label>
+									            <input type="text" class="form-control" id="field-1" placeholder="John">
+									        </div>
+									    </div>
+									    <div class="col-lg-4">
+									        <div class="form-group">
+									            <label for="field-2" class="control-label">Reference No</label>
+									            <input type="text" class="form-control" id="field-2" placeholder="Doe">
+									        </div>
+									    </div>
+										<div class="col-lg-4">
+									       <div class="form-group">
+									           <label for="field-3" class="control-label">Contact No</label>
+									           <input type="text" class="form-control" id="field-3" placeholder="Address">
+									       </div>
+									   </div>
+									</div>
+									<div class="row">
+									    <div class="col-md-12">
+									        <div class="form-group no-margin">
+									            <label for="field-7" class="control-label">ចំណាំ</label>
+									            <textarea class="form-control autogrow" id="field-7" placeholder="Write something about the products" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 70px;"></textarea>
+									        </div>
+									    </div>
+									</div>
+									<div class="row">
+			                            <div class="col-12">
+											<div class="form-group">
+												<label for="field-3" class="control-label">លក្ខណពិសេស</label>
+		                                        <div id="snow-editor" style="height: 300px;">
+		                                            <h3><span class="ql-size-large">Hello World!</span></h3>
+		                                            <p>
+		                                                <br>
+		                                            </p>
+		                                            <h3>This is an simple editable area.</h3>
+		                                            <p>
+		                                                <br>
+		                                            </p>
+		                                            <ul>
+		                                                <li>
+		                                                    Select a text to reveal the toolbar.
+		                                                </li>
+		                                                <li>
+		                                                    Edit rich document on-the-fly, so elastic!
+		                                                </li>
+		                                            </ul>
+		                                            <p>
+		                                                <br>
+		                                            </p>
+		                                            <p>
+		                                                End of simple area
+		                                            </p>
+	
+		                                        </div>
+		                                        <!-- end Snow-editor-->
+											</div>
+			                            </div>
+			                            <!-- end col -->
+			                        </div>
+			                        <!-- end row -->
+				                </form>
+				            </div>
+				            <!-- card-body -->
+				        </div>
+				        <!-- card -->
+				    </div>
+				    <!-- col-->
+                <!-- end row -->
+				
+            </div>
+            <!-- end container-fluid -->
+
+		</div>
+		<!-- end content -->
+	
+	</div>
+
+	<th:block layout:fragment="scripts">	
+		<!-- Plugins js -->
+        <script th:src="@{/assets/libs/katex/katex.min.js}"></script>
+        <script th:src="@{/assets/libs/quill/quill.min.js}"></script>
+
+        <!-- Init js-->
+        <script th:src="@{/assets/js/pages/form-quilljs.init.js}"></script>
+					
+		<script>						  
+			$(document).ready(function() {	
+				$(".btn-group.dropdown-btn-group.pull-right").find(".btn.btn-default").first().after('<button type="button" class="btn btn-default">Excel</button>');
+				$(".btn-group.dropdown-btn-group.pull-right").find(".btn.btn-default").first().prop("hidden",true);
+				$(".btn-group.dropdown-btn-group.pull-right").find(".btn.btn-default.dropdown-toggle").text("ភាពមើលឃើញជួរឈរ");
+				var addNewButton = '<button type="button" class="btn btn-primary btn_add_new"  data-toggle="modal" data-target="#con-close-modal"><span class="fa fa-plus"></span>  បន្ថែម សម្ភារ</button>';
+				$(".focus-btn-group").html(addNewButton);
+				
+				$("#myInput").on("keyup", function() {
+				   var value = $(this).val().toLowerCase();
+				   $(".dropdown-menu li").filter(function() {
+				     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				   });
+				 });
+			});
+		</script>
+	</th:block>
+</body>
+
+</html>

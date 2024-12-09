@@ -1,0 +1,40 @@
+services:
+#  amsdb:
+#    image: mysql:latest
+#    container_name: amsdb_mysql
+#    # restart: always
+#    environment:
+#      MYSQL_ROOT_PASSWORD: AA@@11bb22cc33
+#      MYSQL_DATABASE: assetdb_dev
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - db_data:/var/lib/mysql
+#    networks:
+#      - app_network
+  amsapp:
+    container_name: amsapp_springboot
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: amsapp:1.0.0
+    ports:
+      - "8080:8080"
+    volumes:
+      - /d/u01:/app/files
+    environment:
+      - SPRING_CONFIG_LOCATION=/app/files/config/assetconfig.yml  # Path to the config file
+#    depends_on:
+#      - amsdb
+    networks:
+      - app_network
+
+#  amsapp_cache:
+#    image: redis:latest
+
+networks:
+  app_network:
+    driver: bridge
+    
+volumes:
+  db_data:

@@ -1,0 +1,635 @@
+ 2024-12-05 23:43:07] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:43:07] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:43:08] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:43:08] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:43:08] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 1.172 seconds (process running for 175412.734)
+ 2024-12-05 23:43:08] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:43:18] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:43:18] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:43:18] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2024-12-05 23:43:19] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-116 - Shutdown initiated...
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-116 - Shutdown completed.
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-117 - Starting...
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-117 - Added connection com.mysql.cj.jdbc.ConnectionImpl@223df778
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-117 - Start completed.
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 429 ms
+ 2024-12-05 23:44:31] WARN  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [F51D090FCE5B84D4DDC150DA3FB0C8B5]
+ 2024-12-05 23:44:31] ERROR [asset-management-system,,] catalina.session.StandardManager - Exception loading sessions from persistent storage
+java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to class java.lang.String (java.io.ObjectStreamClass and java.lang.String are in module java.base of loader 'bootstrap')
+	at java.base/java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1839) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:709) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:1014) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2050) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4453) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at kh.gov.treasury.AssetManagementSystemApplication.main(AssetManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.0.jar:3.4.0]
+ 2024-12-05 23:44:31] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:44:31] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:44:32] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:44:32] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:44:32] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.833 seconds (process running for 175496.615)
+ 2024-12-05 23:44:32] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:45:02] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:45:02] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:45:02] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2024-12-05 23:45:03] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-117 - Shutdown initiated...
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-117 - Shutdown completed.
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:46:27] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-118 - Starting...
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-118 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f39942e
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-118 - Start completed.
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 431 ms
+ 2024-12-05 23:46:28] WARN  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [D377E99308656BDD7D46A04221A250DB]
+ 2024-12-05 23:46:28] ERROR [asset-management-system,,] catalina.session.StandardManager - Exception loading sessions from persistent storage
+java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to class java.lang.String (java.io.ObjectStreamClass and java.lang.String are in module java.base of loader 'bootstrap')
+	at java.base/java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1839) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:709) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:1014) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2050) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4453) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at kh.gov.treasury.AssetManagementSystemApplication.main(AssetManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.0.jar:3.4.0]
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:46:28] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.892 seconds (process running for 175613.1)
+ 2024-12-05 23:46:28] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-118 - Shutdown initiated...
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-118 - Shutdown completed.
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-119 - Starting...
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-119 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1935cbc7
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-119 - Start completed.
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 376 ms
+ 2024-12-05 23:46:36] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:46:36] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:46:37] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:46:37] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:46:37] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.722 seconds (process running for 175621.61)
+ 2024-12-05 23:46:37] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-119 - Shutdown initiated...
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-119 - Shutdown completed.
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:46:38] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-120 - Starting...
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-120 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67f39a55
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-120 - Start completed.
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 441 ms
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:46:39] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.793 seconds (process running for 175623.984)
+ 2024-12-05 23:46:39] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:47:12] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:47:12] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:47:12] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2024-12-05 23:47:14] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-120 - Shutdown initiated...
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-120 - Shutdown completed.
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:48:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-121 - Starting...
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-121 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bba4bde
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-121 - Start completed.
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 410 ms
+ 2024-12-05 23:48:51] WARN  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [B4A4B83895ADDB5C1DE02232200CDED5]
+ 2024-12-05 23:48:51] ERROR [asset-management-system,,] catalina.session.StandardManager - Exception loading sessions from persistent storage
+java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to class java.lang.String (java.io.ObjectStreamClass and java.lang.String are in module java.base of loader 'bootstrap')
+	at java.base/java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1839) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:709) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:1014) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2050) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4453) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at kh.gov.treasury.AssetManagementSystemApplication.main(AssetManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.0.jar:3.4.0]
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:48:51] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.834 seconds (process running for 175755.873)
+ 2024-12-05 23:48:51] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:49:07] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:49:07] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:49:07] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2024-12-05 23:49:08] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-121 - Shutdown initiated...
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-121 - Shutdown completed.
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-122 - Starting...
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-122 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e643bb0
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-122 - Start completed.
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 368 ms
+ 2024-12-05 23:50:07] WARN  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [F485B1A42F80084B60703A8D7CFE5D14]
+ 2024-12-05 23:50:07] ERROR [asset-management-system,,] catalina.session.StandardManager - Exception loading sessions from persistent storage
+java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to class java.lang.String (java.io.ObjectStreamClass and java.lang.String are in module java.base of loader 'bootstrap')
+	at java.base/java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1839) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:709) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:1014) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2050) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4453) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at kh.gov.treasury.AssetManagementSystemApplication.main(AssetManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.0.jar:3.4.0]
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:50:07] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.677 seconds (process running for 175832.241)
+ 2024-12-05 23:50:07] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:50:19] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:50:19] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:50:19] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2024-12-05 23:50:21] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-122 - Shutdown initiated...
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-122 - Shutdown completed.
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-123 - Starting...
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-123 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b2c59e9
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-123 - Start completed.
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 359 ms
+ 2024-12-05 23:50:50] WARN  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [C5BCA97E34944E99AB9C7C0E157321E5]
+ 2024-12-05 23:50:50] ERROR [asset-management-system,,] catalina.session.StandardManager - Exception loading sessions from persistent storage
+java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to class java.lang.String (java.io.ObjectStreamClass and java.lang.String are in module java.base of loader 'bootstrap')
+	at java.base/java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1839) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:709) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:1014) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2050) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4453) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at kh.gov.treasury.AssetManagementSystemApplication.main(AssetManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.0.jar:3.4.0]
+ 2024-12-05 23:50:50] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:50:50] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:50:51] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:50:51] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:50:51] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.683 seconds (process running for 175875.449)
+ 2024-12-05 23:50:51] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-123 - Shutdown initiated...
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-123 - Shutdown completed.
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:50:56] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-124 - Starting...
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-124 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eeeb0c8
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-124 - Start completed.
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 383 ms
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:50:57] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.651 seconds (process running for 175881.817)
+ 2024-12-05 23:50:57] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-124 - Shutdown initiated...
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-124 - Shutdown completed.
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-125 - Starting...
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-125 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75ef9c56
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-125 - Start completed.
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 399 ms
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:51:05] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.721 seconds (process running for 175890.367)
+ 2024-12-05 23:51:05] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-125 - Shutdown initiated...
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-125 - Shutdown completed.
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:51:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-126 - Starting...
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-126 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d3eb8c6
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-126 - Start completed.
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 393 ms
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:51:32] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.691 seconds (process running for 175916.726)
+ 2024-12-05 23:51:32] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:51:59] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:51:59] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:51:59] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2024-12-05 23:52:00] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] ssPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] .s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-126 - Shutdown initiated...
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-126 - Shutdown completed.
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] AssetManagementSystemApplication - Starting AssetManagementSystemApplication using Java 21.0.4 with PID 12660 (D:\gdnt-projects\workspaces\asset-management-system\bin\main started by SOKHOM in D:\gdnt-projects\workspaces\asset-management-system)
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] AssetManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] .RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-127 - Starting...
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] om.zaxxer.hikari.pool.HikariPool - HikariPool-127 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ba36294
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] m.zaxxer.hikari.HikariDataSource - HikariPool-127 - Start completed.
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] .a.catalina.core.StandardService - Starting service [Tomcat]
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] rvletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 331 ms
+ 2024-12-05 23:52:31] WARN  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [5088379F47A19E201C17DC8EF0040EDA]
+ 2024-12-05 23:52:31] ERROR [asset-management-system,,] catalina.session.StandardManager - Exception loading sessions from persistent storage
+java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to class java.lang.String (java.io.ObjectStreamClass and java.lang.String are in module java.base of loader 'bootstrap')
+	at java.base/java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1839) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:709) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:1014) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2050) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1198) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:831) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4453) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at kh.gov.treasury.AssetManagementSystemApplication.main(AssetManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.0.jar:3.4.0]
+ 2024-12-05 23:52:31] INFO  [asset-management-system,,] icationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2024-12-05 23:52:31] WARN  [asset-management-system,,] lizeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2024-12-05 23:52:32] INFO  [asset-management-system,,] s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2024-12-05 23:52:32] INFO  [asset-management-system,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2024-12-05 23:52:32] INFO  [asset-management-system,,] AssetManagementSystemApplication - Started AssetManagementSystemApplication in 0.617 seconds (process running for 175976.412)
+ 2024-12-05 23:52:32] INFO  [asset-management-system,,] onEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2024-12-05 23:52:44] INFO  [asset-management-system,,] c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2024-12-05 23:52:44] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2024-12-05 23:52:44] INFO  [asset-management-system,,] .s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2024-12-05 23:52:45] INFO  [asset-management-system,,] .t.config.HttpUserDetailsService - HttpUserDetails[request=HttpUserDetailsRequest(username=sokhomngor@gmail.com, password=$2y$10$418hRKhPLSQU4QYkNYN8M.7jFaRHXuRgV/ZemoVuz/xSVhPu4QHoS, name=null, photo=null, roles=[Officials, Admin], permissions=[manufacturer-create, allSerial, maintenance-edit, report-by-department-list, serialUsing, product-list, manufacturer-edit, maintenance-create, position-list, manufacturer-list, pivotCategorySourceDetailUsing, maintenance-list, ref, ministry-list, pivotCategorySource, product-category-list, office-list, user-list, product-edit, user-create, warehouse-list, ministry-create, source-list, supply-delete, position-delete, product-category-edit, ministry-edit, source-create, role-delete, supply-edit, ministry-delete, assign-serial-create, office-create, product-create, general-department-create, supply-list, serialReturn, department-create, user-edit, warehouse-edit, people-create, role-edit, people-list, department-list, user-delete, privacy, warehouse-delete, serialFree, pivotCategorySourceDetail, position-create, source-edit, people-edit, printAssignSerial, source-delete, role-list, product-category-delete, maintenance-delete, maintenanceDone, office-delete, manufacturer-delete, department-edit, pivotCategorySourceDetailRef, people-delete, office-edit, report-by-people-department-list, assign-serial-list, product-delete, general-department-delete, product-category-create, general-department-list, department-delete, position-edit, role-create, allProduct, warehouse-create, general-department-edit, assign-serial-delete, assign-serial-edit, maintenance, supply-create, pivotCategorySourceDetailFree])]

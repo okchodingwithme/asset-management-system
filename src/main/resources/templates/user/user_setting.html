@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" layout:decorate="~{main_layout}">
+<head>
+	<title th:text="#{setting}"></title>
+	<style>
+	      .nav-item a span.d-sm-block, .card-title,.text-white, p, input, strong, label, button {
+	          font-family: Content !important;
+	          font-size: 16px;
+	          font-weight: bold;
+	      }
+		  i#changeImage, swal-title, swal-text {
+  	          font-family: Content !important;
+  	          font-size: 14px !important;
+  	          font-weight: bold !important;
+  	      }
+		  .bg-picture {
+		    padding: 50px 0;
+		  }
+		  .bdred, .bdred:active, .bdred:focus{border:1px solid red;}
+		  .swal-text {
+		    font-size: 16px;
+		    position: relative;
+		    float: none;
+		    line-height: normal;
+		    vertical-align: top;
+		    text-align: left;
+		    display: inline-block;
+		    margin: 0;
+		    padding: 0 10px;
+		    font-weight: 400;
+		    color: rgba(0,0,0,.64);
+		    max-width: calc(100% - 20px);
+		    overflow-wrap: break-word;
+		    box-sizing: border-box;
+		    font-family: Content !important;
+		  }
+ 	</style>
+</head>
+<body>
+	<div class="content-page" layout:fragment="content">
+
+		<div class="content">
+            <!-- Start Content-->
+            <div class="container-fluid">
+                <div class="wraper">
+                    <div class="row">
+	                    <div class="col-sm-12">
+	                        <div class="bg-picture text-center" th:style="'background-image: url('+@{/assets/images/big/bg.jpg}+');'">
+	                                <div class="bg-picture-overlay"></div>
+	                                <a class="profile-info-name">
+	                                    <img id="imgPreview" th:src="@{/file/{thumbnail}(thumbnail=*{uReqDtl.photo})}" class="avatar-xl rounded-circle img-thumbnail img_logo" alt="profile-image">
+	                                    <h3 class="text-white" th:text="${data.payload.name}"></h3>
+										<div class="fileupload btn waves-effect waves-light mt-1 mr-1">
+										    <span class="font_small_kh text-success"><i id="changeImage" class="mdi mdi-cloud-upload mr-2"></i>ផ្លាស់ប្ដូររូបភាព</span>
+										    <input id="file" name="file" type="file" class="upload">
+										</div>										
+									</a>
+                            </div>
+                        </div>
+                        <!--/ meta -->
+                    </div>
+
+                    <div class="row user-tabs">
+                        <div class="col-md-9 col-xl-6">
+                            <ul class="nav nav-tabs tabs-bordered nav-justified" role="tablist">
+                                <li class="nav-item tab">
+                                    <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fa fa-home"></i></span>
+                                        <span class="d-none d-sm-block" th:text="#{account.title}"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item tab">
+                                    <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fa fa-cog"></i></span>
+                                        <span class="d-none d-sm-block" th:text="#{account.setting}">ការកំណត់</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="tab-content profile-tab-content">
+                                <div class="tab-pane show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <!-- Personal-Information -->
+                                            <div class="card card-default card-fill">
+                                                <div class="card-header">
+                                                    <h3 class="card-title" th:text="#{account.title}"></h3>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="about-info-p">
+                                                        <strong th:text="#{account.name}"></strong>
+                                                        <br>
+                                                        <p class="text-muted" th:text="${data.payload.name}"></p>
+                                                    </div>
+                                                    <div class="about-info-p">
+                                                        <strong th:text="#{account.mobile}"></strong>
+                                                        <br>
+                                                        <p class="text-muted" th:text="${data.payload.phone}"></p>
+                                                    </div>
+                                                    <div class="about-info-p">
+                                                        <strong th:text="#{account.email}"></strong>
+                                                        <br>
+                                                        <p class="text-muted" th:text="${data.payload.email}"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Personal-Information -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="setting" aria-labelledby="setting-tab">
+                                    <!-- Personal-Information -->
+                                    <div class="card card-default card-fill">
+                                        <div class="card-header">
+                                            <h3 class="card-title" th:text="#{account.setting}"></h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="fullName" th:text="#{account.name}"></label>
+                                                    <input type="text" th:value="${data.payload.name}" id="fullName" class="form-control">
+                                                </div>
+												<div class="form-group">
+												    <label for="Mobile" th:text="#{account.mobile}"> </label>
+												    <input type="text" th:value="${data.payload.phone}" id="phone" class="form-control">
+												</div>
+                                                <div class="form-group">
+                                                    <label for="Email" th:text="#{account.email}"></label>
+                                                    <input type="email" th:value="${data.payload.email}" id="email" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Password" th:text="#{account.newpassword}"></label>
+                                                    <input type="password" placeholder="៦ - ១៥ តួអក្ស" id="password" class="form-control" value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="RePassword" th:text="#{account.repassword}"></label>
+                                                    <input type="password" placeholder="៦ - ១៥ តួរអក្ស" id="repassword" class="form-control" value="">
+                                                </div>
+                                               <button id="btnSave" class="btn btn-primary waves-effect waves-light w-md" type="submit" th:text="#{btn.save}">Save</button>
+											</form>
+                                        </div> 
+                                    </div>
+                                    <!-- Personal-Information -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container-fluid -->
+            </div>
+		</div>
+		<!-- end content -->
+	</div>
+
+	<input id="context_path" type="hidden" th:value="@{/}">
+	
+	<th:block layout:fragment="scripts">	
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script>		
+			$(document).ready(function() {	
+				
+				// empty password
+				$("#password").val("");
+								
+				var data        = {};
+				var contextPath = $("#context_path").val();			
+				var csrfToken   = $('meta[name="_csrf"]').attr('content');
+				var csrfHeader  = $('meta[name="_csrf_header"]').attr('content');	
+								
+				// Add or update item
+			    $('#btnSave').on('click', function(e) {
+			        e.preventDefault();	
+
+					data.name = $("#fullName").val().trim();
+					data.phone = $("#phone").val().trim().replace(/ /g,"");
+					data.email = $("#email").val().trim();
+					data.password = $("#password").val().trim();			
+					data.repassword = $("#repassword").val().trim();
+					
+					if((isInvalidPassword(data.password) == true && isStringEmpty(data.password) == false)){
+						$("#password").addClass("bdred")
+						swal({
+						  titile: "ការកំណត់",
+						  text: "លេខសម្ងាត់ត្រូវបញ្ជូលចន្លោះពី ៦ - ១៥ តួអក្សរ!",
+						  icon: "error",
+						  button: "យល់ព្រម",
+						})
+						return;
+					}	
+					$("#password").removeClass("bdred");					
+					if(isStringEmpty(data.password) == false && isStringEmpty(data.repassword) == true){
+						$("#repassword").focus();
+						$("#repassword").addClass("bdred");
+						return;
+					}
+					$("#password").removeClass("bdred");
+					if((isInvalidPassword(data.repassword) == true && isStringEmpty(data.password) == false)
+					){	
+					    $("#repassword").addClass("bdred");
+						swal({
+						  titile: "ការកំណត់",
+						  text: "លេខសម្ងាត់ត្រូវបញ្ជូលចន្លោះពី ៦ - ១៥ តួអក្សរ!",
+						  icon: "error",
+						  button: "យល់ព្រម",
+						})
+						return;
+					}
+					$("#repassword").removeClass("bdred");
+					if(isStringEmpty(data.password) == true && isStringEmpty(data.repassword) == false){
+						$("#password").focus();
+						$("#password").addClass("bdred");
+						return;
+					}					
+					$("#password").removeClass("bdred");
+					$("#repassword").removeClass("bdred");
+					
+					if(data.password != data.repassword){
+						swal({
+						  text: "ការផ្ទៀងផ្ទាត់លេខសម្ងាត់ថ្មីមិនត្រឹមត្រូវ!",
+						  icon: "error",
+						  button: "យល់ព្រម",
+						})
+						return;
+					}				
+					
+					swal({
+					  text: "អ្នកបានបច្ចុប្បន្នភាពទិន្ន័យ, តើរក្សទុកវាទេ!",
+					  icon: "warning",
+					  buttons: {
+					     cancel: "ទេ",
+					     button: "យល់ព្រម"
+					   },
+					}).then((willUpdate) => {	
+											
+					  if (willUpdate) {			
+				        $.ajax({
+				            url: "/user/setting/update",
+				            type: 'POST',
+				            contentType: 'application/json',
+							headers: {
+							    [csrfHeader]: csrfToken // Set the CSRF token in the header
+							},
+				            data: JSON.stringify(data),
+				            success: function(data) {
+								if(data.isSuccessful == false){
+									swal({
+									  text: data.message,
+									  icon: "error",
+									  button: "យល់ព្រម",
+									})
+								}else{
+									swal({
+										text: "ទិន្នន័យត្រូវបានរក្សាទុកដោយជោគជ័យ!",
+										icon: "success",
+										button: "យល់ព្រម",
+									});
+								}
+				            }
+				        });	
+											
+					  }
+					});
+			    });
+				
+				$("#changeImage").click(function(){
+					photoInp.trigger("click");			
+				});
+				
+				var photoInp = $("#file");
+				var file;				
+				photoInp.change(function (e) {
+				    e.preventDefault();	
+										
+				    var fileData = new FormData();
+					var file = this.files[0];
+					
+				    if (file) {
+						
+						fileData.append('file', file);
+						
+				        var reader = new FileReader();
+				        reader.onload = function (event) {
+				            $(".img_logo").attr("src", event.target.result);
+				        };
+				       reader.readAsDataURL(file);
+					   
+					   swal({
+						  titile: "ការកំណត់",
+	   					  text: "អ្នកបានបច្ចុប្បន្នភាពទិន្ន័យ, តើរក្សទុកវាទេ!",
+	   					  icon: "warning",
+	   					  buttons: {
+	   					     cancel: "ទេ",
+	   					     button: "យល់ព្រម"
+	   					   },
+	   					}).then((willUpdate) => {	
+	   					  console.log("fileData",fileData);	
+	   					  if (willUpdate) {			
+	   				        $.ajax({
+	   				            url: "/user/setting/image",
+	   				            type: 'POST',
+	   				            contentType: false,
+								processData:false,
+	   							headers: {
+	   							    [csrfHeader]: csrfToken // Set the CSRF token in the header
+	   							},
+	   				            data: fileData,
+	   				            success: function(data) {
+	   								if(data.isSuccessful == false){
+	   									swal({
+	   									  text: data.message,
+	   									  icon: "error",
+	   									  button: "OK",
+	   									})
+	   								}else{
+	   									swal({
+	   										text: "ទិន្នន័យត្រូវបានរក្សាទុកដោយជោគជ័យ!",
+	   										icon: "success",
+	   										button: "យល់ព្រម",
+	   									});
+	   								}
+	   				            }
+	   				        });	
+	   											
+	   					  }
+	   					});
+				   }									   
+				   
+				});	
+				
+			});		
+			
+			function isStringEmpty(str) {
+		        return str == "" || str.length < 1 || str == null ? true : false;
+		    }
+			function isInvalidPassword(str) {
+		        return str.length > 5 && str.length < 16 ? false : true;
+		    }
+				
+		</script>
+	</th:block>
+</body>
+</html>

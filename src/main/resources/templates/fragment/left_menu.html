@@ -1,0 +1,97 @@
+
+<div class="left-side-menu">
+
+        <div class="slimscroll-menu">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+				<div class="user-box">			                   
+                   <div class="float-left">
+                       <img th:src="@{/file/{photo}(photo=*{uReqDtl.photo})}" alt="" class="avatar-md rounded-circle img_logo">
+                   </div>
+                   <div class="user-info">
+					   <div class="dropdown">
+					       <a href="#" class="dropdown-toggle">
+					              <span class="font_small_kh" th:text="${uReqDtl.name}"></span>
+					       </a>
+					   </div>
+					   <a th:href="@{/user/setting}" class="setting text-muted m-0">
+						   <i class="mdi mdi-settings"></i>
+						   <span class="font-12 text-muted m-0 font_small_kh" th:text="#{account.setting}"></span>
+					   </a>
+                    </div>
+                </div>
+                <ul class="metismenu" id="side-menu">
+
+                    <li>
+                        <a th:href="@{/home}" class="waves-effect">
+                            <i class="mdi mdi-home"></i>
+                            <span class="font" th:text="#{menu.home}"> </span>
+                        </a>
+                    </li>
+					<li>
+					    <a th:href="@{/product/list}" class="waves-effect">
+						    <i class="mdi mdi-view-list"></i>
+					        <span class="font" th:text="#{menu.product.list}"> </span>
+					    </a>
+					</li>
+					<li>
+					    <a th:href="@{/product/distribute}" class="waves-effect">
+						<i class="mdi mdi-view-list"></i>
+					        <span class="font" th:text="#{menu.product.distribute}"> </span>
+					    </a>
+					</li>
+                    <li>
+                        <a href="javascript: void(0);" class="waves-effect">
+                            <i class="mdi mdi-store"></i>
+                            <span class="font" th:text="#{menu.entity}"> </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level font" aria-expanded="false">
+                            <li><a th:href="@{/}" th:text="#{entity.ministry}"></a></li>
+                            <li><a th:href="@{/}" th:text="#{entity.general.department}"></a></li>
+							<li><a th:href="@{/}" th:text="#{entity.department}"></a></li>
+							<li><a th:href="@{/}" th:text="#{entity.office}"></a></li>
+							<li><a th:href="@{/}" th:text="#{entity.officer.name}"></a></li>
+							<li><a th:href="@{/}" th:text="#{entity.officer.position}"></a></li>
+                        </ul>
+                    </li>
+					<li>
+					    <a href="javascript: void(0);" class="waves-effect">
+					        <i class="mdi mdi-settings"></i>
+					        <span class="font" th:text="#{menu.setting}"> </span>
+					        <span class="menu-arrow"></span>
+					    </a>
+					    <ul class="nav-second-level font" aria-expanded="false">
+						<li><a th:href="@{/}" th:text="#{setting.stock}"></a></li>
+						<li><a th:href="@{/}" th:text="#{setting.product.category}"></a></li>
+						<li><a th:href="@{/}" th:text="#{setting.supplier}"></a></li>
+						<li><a th:href="@{/}" th:text="#{setting.manufacturer}"></a></li>
+						<li><a th:href="@{/}" th:text="#{setting.source}"></a></li>
+						<li><a th:href="@{/}" th:text="#{setting.user}"></a></li>
+						<li><a th:href="@{/}" th:text="#{setting.user.permission}"></a></li>
+					    </ul>
+					</li>
+					<li>
+					    <a th:href="@{/}" class="waves-effect">
+						<i class="mdi mdi-newspaper"></i>
+					        <span class="font" th:text="#{menu.report}"> </span>
+					    </a>
+					</li>
+					<li>
+					    <a th:href="@{/}" class="waves-effect">
+						<i class="mdi mdi-leaf"></i>
+					        <span class="font" th:text="#{menu.privacy}"> </span>
+					    </a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Sidebar -left -->
+
+    </div>

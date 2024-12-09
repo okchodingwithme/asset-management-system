@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" layout:decorate="~{main_layout}">
+
+<head>
+	<title th:text="#{menu.product.list}"></title>
+</head>
+
+<body>
+	<div class="content-page" layout:fragment="content">
+
+		<div class="content">
+
+			<!-- Start Content-->
+			<div class="container-fluid">
+
+				<!-- start page title -->
+				<div class="row">
+					<div class="col-12">
+						<div class="page-title-box">
+							<h4 class="page-title font" th:text="#{menu.product.list}"></h4>
+							<div class="page-title-right">
+								<ol class="breadcrumb p-0 m-0">
+									<li class="breadcrumb-item font"><a href="#" th:text="#{system.name}"></a></li>
+									<li class="breadcrumb-item active font" th:text="#{menu.product.list}"></li>
+								</ol>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end page title -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-border card-success">
+
+                            <div class="card-header border-success bg-transparent pb-0">
+                                <h3 class="card-title text-primary"></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-rep-plugin">
+                                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                        <table id="tech-companies-1" class="table table-small-font table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th data-priority="1">Name</th>
+                                                    <th data-priority="3">Received Date</th>
+                                                    <th data-priority="1">Category</th>
+                                                    <th data-priority="3">Source</th>
+                                                    <th data-priority="3">Amount</th>
+                                                    <th data-priority="6">Remain</th>
+                                                    <th data-priority="6">Currency</th>
+                                                    <th data-priority="6">Price</th>
+                                                    <th data-priority="6">Image</th>
+                                                    <th data-priority="6">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>GOOG <span class="co-name">Google Inc.</span></th>
+                                                    <td>597.74</td>
+                                                    <td>12:12PM</td>
+                                                    <td>14.81 (2.54%)</td>
+                                                    <td>582.93</td>
+                                                    <td>597.95</td>
+                                                    <td>597.73 x 100</td>
+                                                    <td>597.91 x 300</td>
+                                                    <td>731.10</td>
+                                                    <td colspan="2">Spanning cell</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>AAPL <span class="co-name">Apple Inc.</span></th>
+                                                    <td>378.94</td>
+                                                    <td>12:22PM</td>
+                                                    <td>5.74 (1.54%)</td>
+                                                    <td>373.20</td>
+                                                    <td>381.02</td>
+                                                    <td>378.92 x 300</td>
+                                                    <td>378.99 x 100</td>
+                                                    <td>505.94</td>
+                                                    <td colspan="2">Spanning cell</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>AMZN <span class="co-name">Amazon.com Inc.</span></th>
+                                                    <td>191.55</td>
+                                                    <td>12:23PM</td>
+                                                    <td>3.16 (1.68%)</td>
+                                                    <td>188.39</td>
+                                                    <td>194.99</td>
+                                                    <td>191.52 x 300</td>
+                                                    <td>191.58 x 100</td>
+                                                    <td>240.32</td>
+                                                    <td colspan="2">Spanning cell</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <th>YHOO <span class="co-name">Yahoo! Inc.</span></th>
+                                                    <td>15.81</td>
+                                                    <td>12:25PM</td>
+                                                    <td>0.11 (0.67%)</td>
+                                                    <td>15.70</td>
+                                                    <td>15.94</td>
+                                                    <td>15.79 x 6100</td>
+                                                    <td>15.80 x 17000</td>
+                                                    <td>18.16</td>
+                                                    <td>Non-spanning</td>
+                                                    <td>Non-spanning</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- end container-fluid -->
+
+		</div>
+		<!-- end content -->
+
+	</div>
+</body>
+
+</html>

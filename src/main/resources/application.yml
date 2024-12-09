@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  reactive:
+    session:
+      timeout: 30m
+
+spring:
+  application:
+    name: asset-management-system
+
+# Import config file 
+#  config:
+#   import:
+#    - /d/u01/config/assetconfig.yml
+
+logging:
+  file:
+    path: logs/${spring.application.name}
+    name: ${logging.file.path}.log
+  pattern:
+    console: " %d{yyyy-MM-dd HH:mm:ss} %-5level [${spring.application.name:},%X{traceId:-},%X{spanId:-}] %-32.32logger{36} - %msg%n"
+    file: " %d{yyyy-MM-dd HH:mm:ss}] %-5level [${spring.application.name:},%X{traceId:-},%X{spanId:-}] %-32.32logger{36} - %msg%n"
+  logback:
+    rollingpolicy:
+      max-file-size: 100KB
+      file-name-pattern: logs/${spring.application.name}.%d{yyyyMMdd}.%i.log

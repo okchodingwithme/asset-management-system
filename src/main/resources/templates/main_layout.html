@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <th:block th:replace="~{fragment/meta}"></th:block>
+  <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE" th:text="#{system.name}"></title>
+  <th:block th:replace="~{fragment/styles}"></th:block>
+
+  <style>
+	
+       element,a, select, select>option {
+	  	  font-family: "Content", Titillium Web;
+		  color: #3e4246;
+		  font-size: 14px;
+		  font-weight: 500;
+	   }
+       title, input, .font, .font a, .card-title, th , .modal-title{
+           font-family: Content !important;
+           font-size: 16px;
+           font-weight: bold;
+       }
+     .font_small_kh, .btn_add_new ,label, button, select>option, .pagination{
+          font-family: Content !important;
+          font-size: 14px;
+          font-weight: 500;
+       }
+     .logo-lg, .logo-sm {
+       font-family: Moul!important;
+       font-size: 18px !important;
+     }
+	 
+	 
+	 .table-rep-plugin .sticky-table-header{
+	   background: #33b86c;
+	   color: #fff;
+	   border-color: #33b86c;
+	 }
+	 li.logout:hover {
+	   float: left;
+	   background-color: rgba(245, 245, 245, 0.23);
+	 }
+	 a.setting:hover {
+	   text-decoration: underline !important;
+	 }
+	 .table {
+	   color: #343a40;
+	 }
+	 .nav-second-level li a, .nav-thrid-level li a {
+	   color: #343a40;
+	 }
+	 .btn-primary, .bg-primary, .btn-primary:hover {
+	   background-color: #3c8dbc !important;
+	   border-color: #367fa9 !important;
+	 }
+  	</style>
+	
+ </head>
+ <body>	
+     <div id="wrapper">
+		<div th:replace="~{fragment/top_navbar}"></div>
+		<div th:replace="~{fragment/left_menu}"></div>
+		<div layout:fragment="content">
+	        <!--
+	          Child layout will render here!
+	         -->
+		</div>	
+	</div>
+
+    <!-- Scripts -->
+	<th:block th:replace="~{fragment/scripts}"></th:block>
+	<th:block layout:fragment="scripts">		
+	  <!--
+	    Child script will render here!
+	  -->
+	</th:block>
+</body>
+</html>

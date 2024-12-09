@@ -1,0 +1,66 @@
+    <!-- Topbar Start -->
+    <div class="navbar-custom bg-success">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+            <li class="dropdown notification-list logout">
+				<a th:href="@{/logout}" style="color: rgb(255, 255, 255);"
+				    class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" id="btn_logout">
+				    <i class="mdi mdi-logout"></i>
+				    <span class="font" th:text="#{logout}"></span>
+				</a>
+            </li>
+        </ul>
+
+        <!-- LOGO -->
+        <div class="logo-box">
+            <a th:href="@{/}" class="logo text-center logo-dark">
+                <span class="logo-lg">
+                    <!--<img th:src="@{/assets/images/logo-dark.png}" alt="" height="16">-->
+                    <span class="logo-lg-text-light" th:text="#{system.name}"></span> 
+                </span>
+                <span class="logo-sm">
+                    <span class="logo-lg-text-light" th:text="#{system.short.name}"></span>
+                    <!--<img th:src="@{/assets/images/logo-sm.png}" alt="" height="25">-->
+                </span>
+            </a>
+
+            <a th:href="@{/}" class="logo text-center logo-light">
+                <span class="logo-lg">
+                    <!--<img th:src="@{/assets/images/logo-light.png}" alt="" height="16">-->
+                    <span class="logo-lg-text-light" th:text="#{system.name}"></span>
+                </span>
+                <span class="logo-sm">
+                    <span class="logo-lg-text-light" th:text="#{system.short.name}"></span>
+                   <!-- <img th:src="@{/assets/images/logo-sm.png}" alt="" height="25">-->
+                </span>
+            </a>
+        </div>
+        <!-- LOGO -->
+        <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            <li>
+                <button class="button-menu-mobile waves-effect waves-light">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- end Topbar -->
+
+	<form hidden th:action="@{/language}" enctype="multipart/form-data" id="frmLanguage">	
+	   <input id="langPefix" name="lang" />
+	   <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />	
+	</form>
+
+	<!-- Change Language -->	
+	<script type="text/javascript">
+		
+		$(document).ready(function() {		
+		    $(".locale").click(function () {
+		        var lang = $(this).attr("data-lang");
+				$("#langPefix").val(lang);
+		        if (lang != ''){
+		           $("#frmLanguage").submit();
+		        }
+		    });
+		});
+		
+	</script>

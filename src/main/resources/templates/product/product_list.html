@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" layout:decorate="~{main_layout}">
+
+<head>
+	<title th:text="#{menu.product.list}"></title>
+	<style>		
+		body, td {
+		    font-family: Arial, sans-serif;font-size: 13px;
+		}		
+	    .sub_th>th{
+		   font-family: Content !important;
+           font-size: 16px!important;
+           font-weight: bold!important;
+		}		  
+		.filter_title, .filter_per_page>span{
+   		      font-family: Content !important;
+              font-size: 16px !important;
+              font-weight: bold!important;
+			     		}
+		.btn-light, .btn-light:hover {
+		  color: #212529;
+		  background-color: #fff;
+		  border-color: #fff;
+		}
+		.dropdown-menu[x-placement^="top"] {
+		  top: 38px !important;
+		}
+		.fa_right_bottom {
+		  float: right !important;
+		  cursor: pointer;
+		  margin-top: 5px;
+		  margin-right: -8.8px;
+		}
+		.fa_right_top{float: right!important;cursor: pointer; margin-top: -2px;}
+		th{cursor: pointer;}		
+		.search_name{
+		  position: absolute;
+		  transform: translate3d(5px, 37px, 0px);
+		  top: 0px;
+		  left: 0px;
+		  will-change: transform;
+		  right: 81px;
+	     }		 
+		 .table-rep-plugin table.focus-on tbody tr.focused td {
+		   background: #3c8dbc;
+		   color: #fff;
+		   border-color: #3c8dbc;
+		     border-left-color: rgb(60, 141, 188);
+		 }
+		 table>tbody>tr>td{
+			cursor: pointer;
+		 }		 
+		 
+		 .dropdown {
+		     position: relative;
+		 }
+		 .dropdown-list {
+		     display: none; /* Hidden by default */
+		     position: absolute;
+		     background-color: white;
+		     border: 1px solid #ccc;
+		     max-height: 200px; /* Set max height */
+			 min-width: 200px;
+		     overflow-y: auto; /* Enable vertical scrolling */
+		     padding: 0;
+		     margin: 0;
+		     list-style-type: none;
+		     z-index: 1; /* Ensure it appears on top */
+			 box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.41);
+			 -webkit-box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.41);
+			 -moz-box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.41);
+			 margin-top: 42px;
+		 }
+
+		 .dropdown-list li {
+		     padding: 5px 15px;
+		     cursor: pointer; /* Pointer cursor on hover */
+		 }
+
+		 .dropdown-list li:hover {
+		     background-color: #f1f1f1; /* Change background on hover */
+		 }
+		 .input-group > .form-control:not(:last-child) {
+		   border-top-right-radius: 2px;
+		   border-bottom-right-radius: 2px;
+		 }
+		 .show_per_page {
+		   padding: 0.39rem !important;
+		   border-radius: 2px;
+		 }
+		.font_italic{
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="content-page" layout:fragment="content">
+
+		<div class="content">
+
+			<!-- Start Content-->
+			<div class="container-fluid">
+
+				<!-- start page title -->
+				<div class="row">
+					<div class="col-12">
+						<div class="page-title-box">
+							<h4 class="page-title font" th:text="#{menu.product.list}"></h4>
+							<div class="page-title-right">
+								<ol class="breadcrumb p-0 m-0">
+									<li class="breadcrumb-item font"><a href="#" th:text="#{system.name}"></a></li>
+									<li class="breadcrumb-item active font" th:text="#{menu.product.list}"></li>
+								</ol>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end page title -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-border card-success">
+                            <div class="card-header border-success bg-transparent pb-0">
+                                <h3 class="card-title text-primary"></h3>
+                            </div>							
+                            <div class="card-body">
+                                <div class="table-rep-plugin">						
+												
+                                    <div class="table-responsive mb-0" data-pattern="priority-columns">	 
+										<form class="form-inline pt-1">
+											<div class="input-group mr-1 mb-0 pt-0 font_small_kh">
+										        <span class="mt-2 ml-1 mr-1">បង្ហាញ</span>
+												<select class="page-link p-1 m-0 show_per_page">
+												  <option value="10">10</option>
+												  <option value="20">20</option>
+												  <option value="50">50</option>
+												  <option value="100">100</option>
+												  <option value="all">All</option>
+												</select>			
+											    <span class="mt-2 ml-1 font_small_kh">ក្នុងមួយទំព័រ</span>					
+											</div>
+										</form>
+										<form class="form-inline">
+											<div class="input-group mr-1 mb-2 pt-1">
+												<span class="mt-0 ml-1 filter_title">ការច្រោះយកតាម:</span>					
+											</div>
+											<div class="input-group mr-1 mb-2 pt-1 dropdown">
+										        <input type="text" style="width: 150px!important;"
+												class="form-control font_italic" id="searchCat" placeholder="ប្រភេទ ...">
+										        <ul id="dropdownListCat" class="dropdown-list">
+										            <li  th:each="cat : ${products.prdCats}"><span th:text="${cat}"></span></li>
+										        </ul>
+										    </div>
+
+											<div class="input-group mr-1 mb-2 pt-1 dropdown">
+										        <input type="text" style="width: 150px!important;"
+												class="form-control font_italic" id="searchSource" placeholder="ប្រភព ...">
+										        <ul id="dropdownListSource" class="dropdown-list">
+										            <li  th:each="source : ${products.prdSources}"><span th:text="${source}"></span></li>
+										        </ul>
+										    </div>
+											
+											<div class="input-group mr-1 mb-2 pt-1">
+                                                <input type="text" name="example-input1-group1" class="form-control font_italic" style="width: 150px!important;" placeholder="ឈ្មោះ ...">
+                                            </div>	
+											<div class="input-group mr-1 mb-2 pt-1">
+											    <input type="text" name="example-input1-group1" class="form-control font_italic" style="width: 150px!important;" placeholder="បរិមាណ ...">
+											</div>	
+											<div class="input-group mr-1 mb-2 pt-1">
+												<button type="button" class="btn btn-default"><i class="mdi mdi-eraser"></i> សម្អាត់ការច្រោះ</button>
+										    </div>
+										</form>							
+                                        <table id="tech-companies-1" class="table table-striped table-small-font bg-white">
+                                            <thead>
+                                                <tr>
+                                                    <!--<th>No</th>-->
+                                                    <th data-priority="1">ឈ្មោះ</th>
+                                                    <th data-priority="3">កាលបរិច្ឆែទទទួល</th>
+                                                    <th data-priority="1">ប្រភេ</th>
+                                                    <th data-priority="3">ប្រភព</th>
+                                                    <th data-priority="3">បរិមាណ</th>
+                                                    <th data-priority="6">នៅសល់</th>
+                                                    <th data-priority="6">រូបិយបណ្ណ</th>
+                                                    <th data-priority="6">តម្លៃ</th>
+                                                    <th data-priority="6">រូបភាព</th>
+                                                    <th data-priority="6">ដំណើរការ</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbproduct"> 
+												<tr th:each="item : ${products.products}" th:class="${item.productId}" th:data-id="${item.productId}">
+									                <!--<td hidden th:text="${item.productId}"></td>-->
+									                <td class="view_product_serial"><i class="icon_change_to btn btn-xs fa fa-plus text-secondary"></i>  <span class="p-1" th:text="${item.productName}"></span></td>
+									                <td th:text="${item.deliveryDate}"></td>
+													<td th:text="${item.categoryName}"></td>
+													<td th:text="${item.sourceName}"></td>
+													<td th:text="${item.quantity}"></td>
+													<td th:text="${item.remain}"></td>
+													<td th:text="${item.currency}"></td>
+													<td th:text="${item.cost}"></td>
+													<td>
+														<img height="30" width="50" th:src="@{/assets/images/users/avatar-1.jpg}">
+													</td>
+													<td>
+														<div class="btn-group text-center">
+			                                                <button type="button" data-toggle="tooltip" data-placement="bottom" title="កែរប្រែ" class="btn btn-outline-danger waves-effect waves-ligh btn-xs mr-2"><i class="fa fa-edit"></i></button>
+			                                                <button type="button" data-toggle="tooltip" data-placement="bottom" title="បន្ថែមកូដ" class="btn btn-outline-success waves-effect waves-light btn-xs mr-2"><i class="fa fa-plus"></i></button>
+			                                                <button type="button" data-toggle="tooltip" data-placement="bottom" title="ឯកសារ" class="btn btn-outline-primary waves-effect waves-light btn-xs mr-2"><i class="far fa-eye"></i></button>
+			                                            </div>
+													</td>
+									            </tr>   												
+                                            </tbody>
+                                        </table>
+                                    </div>
+									<ul class="pagination pagination-md mb-0 mt-2" style="float: right;">
+                                        <li class="page-item">
+                                            <a class="page-link disabled" href="#" aria-label="Previous" disabled="true">
+                                                <i class="ion ion-md-skip-backward"></i>												 
+                                            </a>
+                                        </li>
+                                        <li class="page-item">									
+											<a class="page-link" href="#" aria-label="Previous">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+										</li>
+										<li class="page-item p-0 m-0">
+											<select class="page-link p-1 m-0">
+											  <option value="10">10</option>
+											  <option value="20">20</option>
+											  <option value="50">50</option>
+											  <option value="100">100</option>
+											  <option value="all">All</option>
+											</select>
+										</li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </li>
+										<li class="page-item">
+										    <a class="page-link" href="#" aria-label="Previous">
+										        <i class="ion ion-md-skip-forward"></i>												 
+										    </a>
+										</li>
+                                    </ul>
+									<span class="pagination pagination-md mb-0 mt-2 pt-2 font_small_kh" style="float: left;">បង្ហាញ 1 ទៅ 10 នៃ 10 កំណត់ត្រាទាំងអស់</span>									
+                                </div>                            
+							</div>	
+										
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+				
+            </div>
+            <!-- end container-fluid -->
+
+		</div>
+		<!-- end content -->
+	
+	</div>
+	
+	<th:block layout:fragment="scripts">		
+
+	  <script>		
+		
+			var data        = {};		
+			var csrfToken   = $('meta[name="_csrf"]').attr('content');
+			var csrfHeader  = $('meta[name="_csrf_header"]').attr('content');	
+			  
+			$(document).ready(function() {	
+				
+				$(".btn-group.dropdown-btn-group.pull-right").find(".btn.btn-default").first().after('<button type="button" class="btn btn-default">Excel</button>');
+				$(".btn-group.dropdown-btn-group.pull-right").find(".btn.btn-default").first().prop("hidden",true);
+				$(".btn-group.dropdown-btn-group.pull-right").find(".btn.btn-default.dropdown-toggle").text("ភាពមើលឃើញជួរឈរ");
+				var addNewButton = '<a class="btn btn-primary btn_add_new"><span class="fa fa-plus"></span> បន្ថែម សម្ភារ</a>';
+				$(".focus-btn-group").html(addNewButton);
+
+				$("body .btn_add_new").attr("href","/product/create");
+				
+				// searchSource				 
+				 // Show the dropdown when the input is focused
+			     $('#searchSource').focus(function() {
+			         $('#dropdownListSource').show();
+					 $('#dropdownListCat').hide();
+			     });
+
+			     // Hide the dropdown when clicking outside of it
+			     $(document).click(function(e) {
+			         if (!$(e.target).closest('.dropdown').length) {
+			             $('#dropdownListSource').hide();
+			         }
+			     });
+
+			     // Filter dropdown options based on input
+			     $('#searchSource').on('keyup', function() {
+			         var value = $(this).val().toLowerCase();
+			         $('#dropdownListSource li').filter(function() {
+			             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+			         });
+			     });
+
+			     // Select an option and set it as the input value
+			     $('#dropdownListSource li').click(function() {
+			         $('#searchSource').val($(this).text());
+			         $('#dropdownListSource').hide(); // Hide dropdown after selection
+			     });
+				 // ./ searchSource
+				 
+				 // searchCat				 
+ 				 // Show the dropdown when the input is focused
+ 			     $('#searchCat').focus(function() {
+				     $('#dropdownListSource').hide();
+ 			         $('#dropdownListCat').show();
+ 			     });
+
+ 			     // Hide the dropdown when clicking outside of it
+ 			     $(document).click(function(e) {
+ 			         if (!$(e.target).closest('.dropdown').length) {
+ 			             $('#dropdownListCat').hide();
+ 			         }
+ 			     });
+
+ 			     // Filter dropdown options based on input
+ 			     $('#searchCat').on('keyup', function() {
+ 			         var value = $(this).val().toLowerCase();
+ 			         $('#dropdownListCat li').filter(function() {
+ 			             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+ 			         });
+ 			     });
+
+ 			     // Select an option and set it as the input value
+ 			     $('#dropdownListCat li').click(function() {
+ 			         $('#searchCat').val($(this).text());
+ 			         $('#dropdownListCat').hide(); // Hide dropdown after selection
+ 			     });
+ 				 // ./ searchCat	
+				 
+				 var table = '<tr class="sub_item bg-white"> <td colspan="10" class="p-0 m-0"> <div class="card-body pb-2 pt-2 pl-2 pr-2 mt-1 mb-1 mr-0 ml-0">'
+				             	+'<div class="table-rep-plugin pb-0 pt-0 mt-0 mb-0">'
+						             +'<table class="table table-striped table-bordered table-small-font pb-0 pt-0 mt-0 mb-0">'
+							             +'<thead class="bg-white">'
+								             +'<tr class="bg-white sub_th">'
+												+'<th data-priority="1">#</th>'
+												+'<th data-priority="1">Serial Code</th>'
+												+'<th data-priority="1">Asset Code</th>'
+												+'<th data-priority="1">ឃ្លាំង</th>'
+												+'<th data-priority="1">ស្ថានភាព</th>'
+												+'<th data-priority="1">អ្នកប្រើប្រាស់</th>'
+												+'<th data-priority="1">ដំណើរការ</th>'
+												+'<th data-priority="1">ពណ៌</th>'
+												+'<th data-priority="1">Label</th>'
+												+'<th data-priority="1">ចំណាំ</th>'
+												+'<th data-priority="1">សម្មភាព</th>'
+											 +'</tr>'
+										 +'</thead>'
+										 +'<tbody>'
+										     +'<tr>'
+										 		+'<td>1</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>ok body</td>'
+												+'<td>'
+													+'<div class="btn-group text-center">'
+												        +'<button type="button" data-toggle="tooltip" data-placement="bottom" title="កែរប្រែ" class="btn btn-outline-danger waves-effect waves-ligh btn-xs mr-2"><i class="fa fa-edit"></i></button>'
+												        +'<button type="button" data-toggle="tooltip" data-placement="bottom" title="បន្ថែមកូដ" class="btn btn-outline-success waves-effect waves-light btn-xs mr-2"><i class="fa fa-plus"></i></button>'
+												        +'<button type="button" data-toggle="tooltip" data-placement="bottom" title="ឯកសារ" class="btn btn-outline-primary waves-effect waves-light btn-xs mr-2"><i class="far fa-eye"></i></button>'
+												    +'</div>'
+										     +'</tr>'
+											 +'<tr>'
+ 										 		+'<td>1</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+ 												+'<td>ok body</td>'
+												+'<td>'
+													+'<div class="btn-group text-center">'
+												        +'<button type="button" data-toggle="tooltip" data-placement="bottom" title="កែរប្រែ" class="btn btn-outline-danger waves-effect waves-ligh btn-xs mr-2"><i class="fa fa-edit"></i></button>'
+												        +'<button type="button" data-toggle="tooltip" data-placement="bottom" title="បន្ថែមកូដ" class="btn btn-outline-success waves-effect waves-light btn-xs mr-2"><i class="fa fa-plus"></i></button>'
+												        +'<button type="button" data-toggle="tooltip" data-placement="bottom" title="ឯកសារ" class="btn btn-outline-primary waves-effect waves-light btn-xs mr-2"><i class="far fa-eye"></i></button>'
+												    +'</div>'
+												+ '</td>'
+ 										     +'</tr>'
+										 +'</tbody>'
+						             +'</table>'
+							    +'</div>'
+							+'</div> </td> </tr>';
+				 			 
+				 var clickId = null;
+				 
+				 $("body #tbproduct tr .view_product_serial").click(function(e) {	
+					e.preventDefault();	
+					
+					var id = $(this).parent("tr").data("id");	
+					
+					$.ajax({
+			            url: "/product/serial",
+			            type: 'POST',
+						contentType: 'application/json',
+						headers: {
+						    [csrfHeader]: csrfToken // Set the CSRF token in the header
+						},
+			            data: JSON.stringify({ productId: id }),
+			            success: function(data) {
+							
+			            }
+			        });	
+
+					$(".icon_change_to").addClass("fa-plus");	
+					$(".icon_change_to").removeClass("fa-minus");	
+					
+					if(clickId==id){
+						clickId = null;
+						$(this).find(".icon_change_to").addClass("fa-plus");	
+						$(this).find(".icon_change_to").removeClass("fa-minus");
+						$(".sub_item").slideUp("slow");
+						$(".sub_item").remove();
+						return;
+					}
+					
+					$(this).find(".icon_change_to").removeClass("fa-plus");	
+					$(this).find(".icon_change_to").addClass("fa-minus");
+					$(".sub_item").remove();
+					$("."+id).after(table);	
+					$(".sub_item").slideDown("slow");
+					clickId = id;
+				});
+			});
+					
+		</script>
+	</th:block>
+</body>
+
+</html>

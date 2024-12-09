@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+        <meta charset="utf-8" />
+		<title>ចូល - ប្រព័ន្ធគ្រប់គ្រងសម្ភារ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Responsive bootstrap 4 admin template" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+		<link href="https://fonts.googleapis.com/css?family=Content|Moul|Titillium+Web" rel="stylesheet">
+
+        <!-- App css -->
+        <link th:href="@{assets/css/bootstrap.min.css}" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link th:href="@{assets/css/icons.min.css}" rel="stylesheet" type="text/css" />
+        <link th:href="@{assets/css/app.min.css}" rel="stylesheet" type="text/css" id="app-stylesheet" />
+		
+		<style>	
+			.syst_name {		
+				padding-top: 6px!important;
+				color: #EBE3AA!important;
+				font-weight: lighter!important;
+				white-space: nowrap!important;
+				font-family: Moul!important;
+				font-size: 27px!important;
+			}
+
+			input,button {
+			    font-family: Content !important;
+			    font-size: 16px;
+			    font-weight: bold;
+			}
+
+			span,a,label {
+			    font-family: Content !important;
+			    font-size: 15px;
+			    font-weight: bold;
+			}
+			.font {
+			    font-family: Content !important;
+			    font-size: 15px;
+			    font-weight: 500;
+			}
+		</style>
+
+    </head>
+
+    <body class="authentication-page">
+
+        <div class="account-pages my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="card mt-4">
+                            <div class="card-header bg-img p-5 position-relative">
+                                <div class="bg-overlay"></div>
+                                <h4 class="text-white text-center mb-0 syst_name">ប្រព័ន្ធគ្រប់គ្រងសម្ភារ</h4>
+                            </div>
+                            <div class="card-body p-4 mt-2">
+								
+                                <form method="post" th:action="@{/perform_login}" enctype="multipart/form-data" class="p-3">
+									
+								    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />	
+                                    <div th:if="${isError eq true}">
+										<div class="form-group mb-3">
+											<div class="alert alert-warning alert-dismissible fade show font">
+											    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+											        <span aria-hidden="true">×</span>
+											    </button>
+											    អ៊ី​ម៉ែល ឬ លេខសម្ងាត់មិនត្រឹមត្រូវ!
+											</div>
+										</div>
+									</div>
+									<div th:if="${isLogout eq true}">
+										<div class="form-group mb-3">
+											<div class="alert alert-success alert-dismissible fade show font">
+											    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+											        <span aria-hidden="true">×</span>
+											    </button>
+											    អ្នកបានចាកចេញពីប្រពន្ធដោយជោគជ័យ!
+											</div>
+										</div>
+									</div>
+                                    <div class="form-group mb-3">
+                                        <input class="form-control" type="email" required="" placeholder="អ៊ីម៉ែល" name="username" value="sokhomngor@gmail.com">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input class="form-control" type="password" required="" placeholder="លេខសម្ងាត់" name="password" value="123456">
+                                    </div>
+
+                                    <!--<div class="form-group mb-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox-signin">
+                                            <label class="custom-control-label" for="checkbox-signin">ចងចាំលេខសម្ងាត់</label>
+                                        </div>
+                                    </div>-->
+
+                                    <div class="form-group text-center mt-5 mb-4">
+                                        <button class="btn btn-primary waves-effect width-md waves-light" type="submit"> ចូល </button>
+                                    </div>
+
+                                    <div class="form-group row mb-0">
+                                        <div class="col-sm-12 text-right">
+                                            <a th:href="@{/forgot/password}"> ភ្លេចលេខសម្ងាត់</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+            </div>
+        </div>
+
+        <!-- Vendor js -->
+        <script th:src="@{assets/js/vendor.min.js}"></script>
+
+		<!-- Todo app -->
+		<script th:src="@{/assets/js/pages/jquery.todo.js}"></script>
+		
+        <!-- App js -->
+        <script th:src="@{assets/js/app.min.js}"></script>
+		
+		<script>
+			$(document).ready(function(){
+			    var uri = window.location.toString();
+			   if (uri.indexOf("?") > 0) {
+			        var clean_uri = uri.substring(0, uri.indexOf("?"));
+			        window.history.replaceState({}, document.title, clean_uri+"?loginRequired=true");
+			   }
+			});
+		</script>
+
+    </body>
+
+</html>
